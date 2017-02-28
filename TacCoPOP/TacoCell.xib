@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacCoPOP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="368-YP-QZh">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="135" id="bcf-wO-KyU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQx-Sx-GlK">
+                        <rect key="frame" x="0.0" y="143" width="224" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="P71-4q-lH3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="368-YP-QZh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3jc-dj-Znd"/>
+                <constraint firstItem="fQx-Sx-GlK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hzo-ZL-tun"/>
+                <constraint firstAttribute="bottom" secondItem="fQx-Sx-GlK" secondAttribute="bottom" constant="5" id="Mxk-PS-3vb"/>
+                <constraint firstItem="368-YP-QZh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OJy-Dh-jVW"/>
+                <constraint firstAttribute="trailing" secondItem="fQx-Sx-GlK" secondAttribute="trailing" id="U10-Ct-Fge"/>
+                <constraint firstAttribute="trailing" secondItem="368-YP-QZh" secondAttribute="trailing" id="zAF-VT-PeW"/>
+            </constraints>
+            <size key="customSize" width="224" height="176"/>
+            <connections>
+                <outlet property="tacoImage" destination="368-YP-QZh" id="zqG-nT-jIB"/>
+                <outlet property="tacoLabel" destination="fQx-Sx-GlK" id="Yw6-EU-wCL"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="30"/>
+        </collectionViewCell>
+    </objects>
+</document>
